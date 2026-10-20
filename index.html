@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>iPhone Sim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="phone">
+    <div class="island"></div>
+
+    <div class="screen">
+      <!-- Status bar -->
+      <div class="statusbar">
+        <span id="clock">9:41</span>
+        <span class="status-icons">
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2" width="3" height="10" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 4a10 10 0 0 1 14 0"/><path d="M4 7a6 6 0 0 1 8 0"/><circle cx="8" cy="10" r="1" fill="currentColor"/></svg>
+          <svg width="26" height="12" viewBox="0 0 26 12" fill="none"><rect x="0.5" y="0.5" width="22" height="11" rx="3.5" stroke="currentColor" opacity=".5"/><rect x="2" y="2" width="19" height="8" rx="2" fill="currentColor"/><rect x="24" y="4" width="2" height="4" rx="1" fill="currentColor" opacity=".5"/></svg>
+        </span>
+      </div>
+
+      <!-- Home screen -->
+      <div class="home" id="home">
+        <div class="grid">
+          <button class="icon" data-app="photos"><span class="tile t-photos">🌸</span><small>Photos</small></button>
+          <button class="icon" data-app="maps"><span class="tile t-maps">📍</span><small>Maps</small></button>
+          <button class="icon" data-app="line"><span class="tile t-line">💬</span><small>Chat</small></button>
+          <button class="icon" data-app="notes"><span class="tile t-notes">📝</span><small>Notes</small></button>
+          <button class="icon" data-app="clock"><span class="tile t-clock">🕒</span><small>Clock</small></button>
+          <button class="icon" data-app="calc"><span class="tile t-calc">🧮</span><small>Calculator</small></button>
+        </div>
+
+        <div class="dock">
+          <button class="icon" data-app="line"><span class="tile t-line">💬</span></button>
+          <button class="icon" data-app="maps"><span class="tile t-maps">📍</span></button>
+          <button class="icon" data-app="photos"><span class="tile t-photos">🌸</span></button>
+        </div>
+      </div>
+
+      <!-- Apps stack here. Each one is: <section class="app" id="app-NAME"> -->
+      <section class="app" id="app-photos"><div class="app-body"><h2>Photos</h2><p>Photos app goes here.</p></div></section>
+      <section class="app" id="app-maps"><div class="app-body"><h2>Maps</h2><p>Maps app goes here.</p></div></section>
+      <section class="app" id="app-line"><div class="app-body"><h2>Chat</h2><p>Chat app goes here.</p></div></section>
+      <section class="app" id="app-notes"><div class="app-body"><h2>Notes</h2><p>Notes app goes here.</p></div></section>
+      <section class="app" id="app-clock"><div class="app-body"><h2>Clock</h2><p>Clock app goes here.</p></div></section>
+      <section class="app" id="app-calc"><div class="app-body"><h2>Calculator</h2><p>Calculator app goes here.</p></div></section>
+
+      <!-- Home bar (tap to go home) -->
+      <button class="homebar" id="homebar" aria-label="Go home"></button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
